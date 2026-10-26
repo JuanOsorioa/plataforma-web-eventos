@@ -1,17 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactanos</title>
 </head>
+
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="contact.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
+
+        <h1>Contacta con nosotros!</h1>
+        <p>Tienes alguna duda sobre un evento o te gustaría agendar tu propio evento.</p>
+        <p>No dudes en <strong>Contactanos</strong></p>
         <section>
-            <form>
-                
+            <form action="">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required />
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
             </form>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2026 Voyager Group. Todos los derechos reservados.</p>
+    </footer>
 </body>
+
 </html>
