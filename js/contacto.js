@@ -16,8 +16,3 @@ function mandarMensaje() {
   document.getElementById("error").innerText = "";
   alert("mensaje enviado!");
 }
-
-function salir() {
-  sessionStorage.removeItem("auth");
-  window.location = "../index.html";
-}
