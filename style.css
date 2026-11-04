@@ -54,38 +54,26 @@ body {
 
 /* estilos navbar  */
 
-nav {
-    border-bottom: solid 2px #9e9d9d;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1rem;
+.navbar {
+    min-height: 75px;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    padding: 2rem 1rem;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
+.navbar-brand {
+    letter-spacing: -0.5px;
 }
 
-nav a {
-    text-decoration: none;
-    color: #3d3c3c;
+.navbar .nav-link {
+    color: #d1d5db;
+    font-weight: 500;
+    transition: color 0.2s ease;
 }
 
-.active {
-    text-decoration: underline;
-    color: #6e6d6d;
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #0d6efd;
 }
 
-nav a:hover {
-    text-decoration: underline;
-    color: #6e6d6d;
-}
-
-.hiden {
-    display: none;
+.navbar .btn {
+    font-weight: 500;
+    transition: all 0.2s ease;
 }
