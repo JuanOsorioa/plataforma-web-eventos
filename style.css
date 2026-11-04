@@ -25,6 +25,17 @@ body {
     font-family: sans-serif
 }
 
+body.page-with-footer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+}
+
+body.page-with-footer > main {
+    flex: 1;
+}
+
 .sesion-body {
     background-image: url("img/images.jpeg");
     background-size: cover;
@@ -76,4 +87,8 @@ body {
 .navbar .btn {
     font-weight: 500;
     transition: all 0.2s ease;
+}
+
+.hiden {
+    display: none;
 }
