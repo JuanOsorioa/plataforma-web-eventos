@@ -12,7 +12,7 @@ function iniciarSesion() {
       "Por favor, ingresa todos los campos";
     return;
   }
-  if (email === "boyager@email.com" && password === "boyager123") {
+  if (email === "voyager@email.com" && password === "voyager123") {
     sessionStorage.setItem("auth", "true");
     window.location = "./eventos.html";
   } else {

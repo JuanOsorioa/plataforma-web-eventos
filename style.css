@@ -144,3 +144,112 @@ body.page-with-footer>main {
 .hiden {
     display: none;
 }
+
+/* Estilos de la página de eventos; conservan la paleta y tipografía del sitio. */
+.events-page {
+    max-width: 1200px;
+}
+
+.events-heading {
+    padding: 1rem 0 0.5rem;
+}
+
+.event-index {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem 1rem;
+    max-width: 850px;
+    color: #495057;
+}
+
+.event-index a {
+    color: #0d6efd;
+    font-size: 0.95rem;
+    text-decoration: none;
+}
+
+.event-index a:hover {
+    text-decoration: underline;
+}
+
+.event-card {
+    overflow: hidden;
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.35rem 1.25rem rgba(33, 37, 41, 0.09);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0.75rem 1.75rem rgba(33, 37, 41, 0.14);
+}
+
+.event-image {
+    width: 100%;
+    height: 215px;
+    object-fit: cover;
+}
+
+.event-card .card-body {
+    padding: 1.4rem;
+}
+
+.event-card .card-title {
+    line-height: 1.3;
+}
+
+.event-category {
+    font-weight: 600;
+}
+
+.event-category.academic {
+    color: #0a58ca;
+    background-color: #cfe2ff;
+}
+
+.event-category.tech {
+    color: #5a32a3;
+    background-color: #e2d9f3;
+}
+
+.event-category.culture {
+    color: #9a4b00;
+    background-color: #ffe5c2;
+}
+
+.event-details {
+    display: grid;
+    gap: 0.65rem;
+    margin: 0 0 1.25rem;
+    color: #495057;
+    font-size: 0.92rem;
+}
+
+.event-details li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+}
+
+.event-details i {
+    flex: 0 0 1rem;
+    color: #0d6efd;
+}
+
+@media (max-width: 575.98px) {
+    .events-page {
+        padding-top: 2rem !important;
+    }
+
+    .event-image {
+        height: 195px;
+    }
+
+    .event-index {
+        gap: 0.6rem 0.85rem;
+    }
+}
+
