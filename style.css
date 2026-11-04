@@ -32,16 +32,68 @@ body.page-with-footer {
     min-height: 100vh;
 }
 
-body.page-with-footer > main {
+body.page-with-footer>main {
     flex: 1;
 }
 
+/* estilos de sesión */
 .sesion-body {
-    background-image: url("img/images.jpeg");
+    min-height: 100vh;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url("../img/images.jpeg");
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+.login-card {
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.login-card h2 {
+    color: #212529;
+    letter-spacing: -0.5px;
+}
+
+.login-card .form-control {
+    border-radius: 10px;
+    padding: 12px 15px;
+    border: 1px solid #dee2e6;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-card .form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+.login-card .btn {
+    font-weight: 600;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.login-card .btn:hover {
+    transform: translateY(-2px);
+}
+
+.login-card footer a {
+    color: #0d6efd;
+    font-weight: 500;
+}
+
+@media (max-width: 576px) {
+    .sesion-body {
+        background-attachment: scroll;
+    }
+
+    .login-card .card-body {
+        padding: 25px !important;
+    }
 }
 
 .contenido {
